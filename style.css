@@ -1,0 +1,149 @@
+* {
+    margin: 0; padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header > div, footer {
+    color: white;
+    background-color: #2f8d46;
+}
+
+header > div {
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header > div h1 {
+    font-size: 1.8rem;
+}
+
+header > div input {
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 2px #ddd;
+    padding: 5px 10px;
+}
+
+header nav {
+    padding: 12px 0;
+    background-color: #3ab471;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+header nav a {
+    font-weight: 600;
+    color: white;
+}
+
+main h2, main h3 {
+    color: #2f8d46;
+}
+
+main p {
+    color: #888984;
+}
+
+main .greetings {
+    height: 30vh;
+    background-color: #e7f6ef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.4;
+}
+
+main .greetings h2 {
+    font-size: 2.2rem;
+}
+
+main .greetings p {
+    font-size: 1.15rem;
+}
+
+main section {
+    height: 50vh;
+    background-color: #f2f2f2;
+}
+
+main .grid {
+    width: 60vw;
+    margin: auto;
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+}
+
+main .grid-box {
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 0 4px silver;
+    border-radius: 8px;
+}
+
+main .grid-box h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 950px) {
+    main .grid {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 768px) {
+    main .grid {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 625px) {
+    header > div h1 {
+        font-size: 1.5rem;
+    }
+
+    header nav {
+        gap: 1.2rem;
+    }
+
+    main section {
+        height: auto;
+    }
+
+    main .grid {
+        width: 90vw;
+        padding: 15px 0;
+        display: block;
+    }
+
+    main .grid-box {
+        margin: 15px;
+    }
+
+    main .grid-box h3 {
+        font-size: 1.2rem;
+    }
+
+    main .greetings h2 {
+        font-size: 1.7rem;
+    }
+
+    main .greetings p {
+        font-size: 0.9rem;
+    }
+}
